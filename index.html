@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto de Extensão - Rachadinha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="app_icon.png" alt="Logo Rachadinha" style="height: 60px;">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#documentacoes">Documentações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="pagina">
+      <section class="intro">
+        <h1>O que é Extensão Curricular?</h1>
+        <p>O projeto de Extensão Curricular consiste na implementação de um aplicativo ou software utilizando de
+          conteúdos
+          de análise de sistemas, banco de dados e desenvolvimento de software, assim como outras áreas da programação,
+          compartilhado publicamente, onde os alunos da UniFil se engajam em projetos voltados para a resolução de dores
+          de algum grupo social.</p>
+      </section>
+
+      <section class="tema">
+        <h2>Tema do Projeto:</h2>
+        <p>Desenvolvimento de um aplicativo para divisão de contas entre amigos de uma forma mais fácil.</p>
+      </section>
+
+      <section class="sobre">
+        <h2>Sobre o projeto:</h2>
+        <p>O Rachadinha é um aplicativo que parte de uma necessidade simples, dividir as contas entre você e seus amigos
+          nos finais de "rolê".</p>
+        <p>Além de auxiliar na divisão da conta, o aplicativo contará com a funcionalidade de inserir o seu QR code para
+          a
+          transferência por Pix, definir opções da divisão como taxa de entrega, remover um item em específico, e manter
+          histórico de operações.</p>
+        <p>Tudo para tornar esse processo de rachar contas simples e sem estresse :)</p>
+      </section>
+
+      <section class="objetivo">
+        <h2>Objetivo:</h2>
+        <p>Auxiliar na divisão de contas entre amigos nos "rolês".</p>
+      </section>
+
+      <section class="justificativa">
+        <h2>Justificativa:</h2>
+        <p>Decidimos desenvolver o "Rachadinha" com a premissa de acabar com as complicações que surgem na hora de
+          dividir
+          as contas no fim de um encontro com amigos, seja uma ida a um bar, restaurante, até churrascos em casa ou
+          pedidos de delivery.</p>
+      </section>
+
+      <section class="funcionalidades">
+        <h2>Funcionalidades:</h2>
+        <ul>
+          <li>Calcular partes iguais ou diferentes de alguma conta</li>
+          <li>Identificar cada parte da conta por nome para facilitar organização</li>
+          <li>Histórico de transações</li>
+        </ul>
+      </section>
+
+      <section class="publico">
+        <h2>Público-alvo:</h2>
+        <p>De jovens até adultos, entre 16 - 30 anos, que tem costume de sair para bares, restaurantes, pedir delivery,
+          ou
+          organizar eventos com os amigos em casa.</p>
+        <a href="#" class="btn-download">Baixar o App</a>
+      </section>
+    </section>
+
+    <section id="quem-somos" class="pagina" style="display: none;">
+      <h2>Quem Somos</h2>
+      <div class="cards-container">
+        <div class="card-profile">
+          <img src="leandro_foto.jpeg" alt="Foto de Participante 1">
+          <h3>Leandro Mesquita</h3>
+          <p><strong>Cargo:</strong> Desenvolvedor mobile júnior na BRID Soluções</p>
+          <p><strong>Idade:</strong> 23 anos</p>
+          <p><strong>Curso:</strong> Ciência da Computação</p>
+          <a href="https://github.com/leandromesq" target="_blank">GitHub</a>
+        </div>
+        <div class="card-profile">
+          <img src="emyly_foto.jpg" alt="Foto de Participante 2">
+          <h3>Emyly Gabryelle</h3>
+          <p><strong>Cargo:</strong> Estagiária da TCS</p>
+          <p><strong>Idade:</strong> 23 anos</p>
+          <p><strong>Curso:</strong> Ciência da Computação</p>
+          <a href="https://github.com/emylygaby" target="_blank">GitHub</a>
+        </div>
+        <div class="card-profile">
+          <img src="marcelly_foto.jpg" alt="Foto de Participante 3">
+          <h3>Marcelly Liechocki</h3>
+          <p><strong>Cargo:</strong> Estagiária na TCS</p>
+          <p><strong>Idade:</strong> 21 anos</p>
+          <p><strong>Curso:</strong> Engenharia de Software</p>
+          <a href="https://github.com/usuario3" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentacoes" class="pagina" style="display: none;">
+      <h2>Documentações</h2>
+      <p>Em breve...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Projeto de Extensão - Rachadinha | UniFil</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').substring(1);
+        document.querySelectorAll('.pagina').forEach(sec => sec.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
