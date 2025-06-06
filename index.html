@@ -78,7 +78,8 @@
         <p>De jovens até adultos, entre 16 - 30 anos, que tem costume de sair para bares, restaurantes, pedir delivery,
           ou
           organizar eventos com os amigos em casa.</p>
-        <a href="#" class="btn-download">Baixar o App</a>
+        <a href="https://github.com/leandromesq/rachadinha/releases/download/v0.1.0-alpha/rachadinha-0.1.0-alpha.apk"
+          class="btn-download">Baixar o App</a>
       </section>
     </section>
 
@@ -114,7 +115,60 @@
 
     <section id="documentacoes" class="pagina" style="display: none;">
       <h2>Documentações</h2>
-      <p>Em breve...</p>
+
+      <div class="doc-section">
+        <h3>Tecnologias Usadas</h3>
+        <p><strong>Frontend:</strong> Flutter</p>
+      </div>
+
+      <div class="doc-item">
+        <h4>Caso de Uso</h4>
+        <p>Representa as funcionalidades que o sistema oferece ao usuário final e suas interações.</p>
+        <img src="caso_de_uso.jpeg" alt="Diagrama de Caso de Uso">
+      </div>
+
+      <div class="doc-item">
+        <h4>DER (Diagrama Entidade Relacionamento)</h4>
+        <p>Mostra as entidades do banco de dados e os relacionamentos entre elas.</p>
+        <img src="der.png" alt="DER">
+      </div>
+
+      <div class="doc-item">
+        <h4>Diagrama de Implantação</h4>
+        <p>Define como os componentes do sistema são distribuídos na infraestrutura.</p>
+        <img src="implantacao.png" alt="Diagrama de Implantação">
+      </div>
+
+      <div class="doc-item">
+        <h4>Documento de Visão</h4>
+        <p>Apresenta uma visão geral do sistema, incluindo objetivos e funcionalidades.</p>
+        <a href="visao.pdf" target="_blank" class="btn-pdf">Visualizar PDF</a>
+      </div>
+
+      <div class="doc-item">
+        <h4>Diagrama de Workflow</h4>
+        <p>Descreve o fluxo das atividades e processos do sistema.</p>
+        <img src="workflow.png" alt="Workflow">
+      </div>
+
+      <hr class="divider">
+
+      <div class="layout-section">
+        <h3>Layout do Sistema</h3>
+        <img src="telas.png" alt="Protótipos de Tela">
+
+        <div class="layout-info">
+          <h4>Informações da Tela</h4>
+          <p><strong>Tela Login:</strong> Informar email e senha cadastrados para autenticação e realizar o login. Caso
+            não possua um login, será possível ser levado a tela de cadastro.</p>
+          <p><strong>Tela Cadastro:</strong> Nesta tela o usuário deverá informar seu nome completo, data de nascimento
+            (no mínimo 15 anos), um email válido, criar uma senha e colocar uma foto de perfil de sua preferência.</p>
+          <p><strong>Tela Principal:</strong> Adicionar Itens: deverá ser informado o nome do item e seu preço.
+            Adicionar Pessoas: poderá adicionar quantas pessoas quiser e informar seus respectivos nomes. Ao clicar em
+            cima do nome da pessoa, abrirá um pop-up informando detalhadamente o item e o valor correspondente. Aba
+            Lateral: opção de visualizar o histórico de divisões e inserir o seu QR code para o pagamento.</p>
+        </div>
+      </div>
     </section>
   </main>
 
