@@ -314,9 +314,14 @@ footer {
 .title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-right: 25rem;
+  margin-left: 100px;
   color: var(--green-dark);
   letter-spacing: 1px;
   align-self: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
 }
